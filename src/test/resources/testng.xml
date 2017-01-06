@@ -10,7 +10,7 @@
             </class>
         </classes>
     </test>
-    <test name="Parameter Test two">
+    <test name="Firefox Test">
         <!-- This parameter will be passed this test only -->
         <parameter name="browser" value="firefox" />
         <classes>
