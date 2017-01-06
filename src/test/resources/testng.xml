@@ -1,0 +1,24 @@
+<suite name="Parameter test Suite" verbose="1">
+    <!-- This parameter will be passed to every test in this suite -->
+    <parameter name="browser" value="chrome" />
+    <test name="Chrome Test">
+        <classes>
+            <class name="com.eviltester.webdriver.MyTestngTest">
+                <methods>
+                    <include name="MyTestngTest" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Parameter Test two">
+        <!-- This parameter will be passed this test only -->
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="com.eviltester.webdriver.MyTestngTest">
+                <methods>
+                    <include name="MyTestngTest" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
